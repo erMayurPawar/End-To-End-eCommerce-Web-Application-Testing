@@ -19,7 +19,7 @@ public class CartPageObjects {
 	private By SamsungTabPrice = By.xpath("(//p[@class='price'])[2]");
 	private By AddSamsungTabinCart = By.xpath("(//span[@class='hidden-xs hidden-sm hidden-md'])[8]");
 // Cart
-	private By ClickCart = By.xpath("//span[@id='cart-total']");
+	private By ClickCart = By.xpath("//button[@class='btn btn-inverse btn-block btn-lg dropdown-toggle']");
 	private By TotalPrice = By.xpath("(//td[@class='text-right'])[12]");
 	
 	

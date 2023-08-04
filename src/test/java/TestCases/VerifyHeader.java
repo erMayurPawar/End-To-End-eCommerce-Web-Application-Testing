@@ -87,6 +87,8 @@ public class VerifyHeader extends BaseClass {
 		}
 		
 		hpo.continueBt2().click();
+		
+		driver.close();
 
 
 	}

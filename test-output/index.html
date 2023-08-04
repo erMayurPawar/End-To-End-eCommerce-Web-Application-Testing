@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,26 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 2 failed,   2 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TestCases.VerifyAddToCart" class="method navigator-link" hash-for-method="CartTest">CartTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TestCases.VerifyRegisterAndLogin" class="method navigator-link" hash-for-method="ValidLogin">ValidLogin</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -120,6 +101,16 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
                     <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.VerifyAddToCart" class="method navigator-link" hash-for-method="CartTest">CartTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.VerifyRegisterAndLogin" class="method navigator-link" hash-for-method="ValidLogin">ValidLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="TestCases.VerifyHeader" class="method navigator-link" hash-for-method="VerifyDesktopHeader">VerifyDesktopHeader</a> <!-- method navigator-link -->
@@ -142,51 +133,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">TestCases.VerifyRegisterAndLogin</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="ValidLogin">
-                  </a> <!-- ValidLogin -->
-                  <span class="method-name">ValidLogin</span>
-                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
-	valid Error Text not showing expected [Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour.] but found [Warning: No match for E-Mail Address and/or Password.]
-	at Resources.commonmethod.verifyAssertions(commonmethod.java:31)
-	at TestCases.VerifyRegisterAndLogin.ValidLogin(VerifyRegisterAndLogin.java:117)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 29 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">TestCases.VerifyAddToCart</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="CartTest">
-                  </a> <!-- CartTest -->
-                  <span class="method-name">CartTest</span>
-                  <div class="stack-trace">java.lang.NumberFormatException: empty String
-	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:1842)
-	at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
-	at java.base/java.lang.Double.parseDouble(Double.java:651)
-	at TestCases.VerifyAddToCart.CartTest(VerifyAddToCart.java:74)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -195,9 +141,31 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="ValidLogin">
+                  </a> <!-- ValidLogin -->
+                  <span class="method-name">ValidLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="VerifyValidRegister">
                   </a> <!-- VerifyValidRegister -->
                   <span class="method-name">VerifyValidRegister</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestCases.VerifyAddToCart</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CartTest">
+                  </a> <!-- CartTest -->
+                  <span class="method-name">CartTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -232,8 +200,6 @@
       &lt;class name=&quot;TestCases.VerifyRegisterAndLogin&quot;/&gt;
       &lt;class name=&quot;TestCases.VerifyAddToCart&quot;/&gt;
       &lt;class name=&quot;TestCases.VerifyHeader&quot;/&gt;
-      &lt;class name=&quot;TestCases.VerifyFooterLinks&quot;/&gt;
-      &lt;class name=&quot;TestCases.CheckBrokenLinks&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -247,7 +213,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (5 classes)</span>
+                <span class="test-name">Test (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -277,24 +243,24 @@ data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'VerifyDesktopHeader')
 data.setCell(0, 2, 'TestCases.VerifyHeader')
-data.setCell(0, 3, 21314);
+data.setCell(0, 3, 57214);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'VerifyValidRegister')
 data.setCell(1, 2, 'TestCases.VerifyRegisterAndLogin')
-data.setCell(1, 3, 11536);
+data.setCell(1, 3, 16102);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'ValidLogin')
 data.setCell(2, 2, 'TestCases.VerifyRegisterAndLogin')
-data.setCell(2, 3, 4481);
+data.setCell(2, 3, 4576);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'CartTest')
 data.setCell(3, 2, 'TestCases.VerifyAddToCart')
-data.setCell(3, 3, 3122);
+data.setCell(3, 3, 2845);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 40 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -327,41 +293,37 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">VerifyValidRegister</span>
-                <span class="method-start">23650 ms</span>
+                <span class="method-start">5947 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">launchBrowserandURL</span>
-                <span class="method-start">35195 ms</span>
+                <span class="method-start">22059 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">ValidLogin</span>
-                <span class="method-start">39728 ms</span>
+                <span class="method-start">26515 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestCases.VerifyAddToCart</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">launchBrowserandURL</span>
-                <span class="method-start">44213 ms</span>
+                <span class="method-start">31094 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">CartTest</span>
-                <span class="method-start">56821 ms</span>
+                <span class="method-start">35418 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestCases.VerifyHeader</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">launchBrowserandURL</span>
-                <span class="method-start">59955 ms</span>
+                <span class="method-start">38271 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">VerifyDesktopHeader</span>
-                <span class="method-start">72727 ms</span>
+                <span class="method-start">44199 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
