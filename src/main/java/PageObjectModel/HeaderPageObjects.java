@@ -42,6 +42,7 @@ public class HeaderPageObjects {
 	private By CamerasPageText2 = By.xpath("//a[contains(text(),'Nikon D300')]");
 	private By Mp3Players = By.xpath("(//a[@class='dropdown-toggle'])[5]");
 	private By Mp3PlayersList = By.xpath("(//div[@class='dropdown-inner'])[4]");
+	private By ContinueBt2 = By.xpath("//a[contains(text(),'Continue')]");
 
 	
 	public HeaderPageObjects(WebDriver driver) {
@@ -170,6 +171,10 @@ public class HeaderPageObjects {
 	
 	public List<WebElement> mp3playerslist() {
 		return (List<WebElement>) driver.findElements(Mp3PlayersList);
+	}
+	
+	public WebElement continueBt2() {
+		return driver.findElement(ContinueBt2);
 	}
 
 }

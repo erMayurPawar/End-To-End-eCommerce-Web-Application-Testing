@@ -22,7 +22,6 @@ public class VerifyHeader extends BaseClass {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 
 // Headers
-
 		hpo.clickcurrency().click();
 		commonmethod.verifyAssertions(hpo.currencydropdown(), commondata.currencydropdown, "currency header is not working");
 		
@@ -45,7 +44,6 @@ public class VerifyHeader extends BaseClass {
 		commonmethod.verifyAssertions(hpo.checkoutpagetext(), commondata.checkoutpageText, "checkout header is not working");
 
 // Menu
-		
 		hpo.desktop().click();
 		List<WebElement> a = hpo.desktoplist();
 		for(WebElement m:a) {
@@ -86,7 +84,9 @@ public class VerifyHeader extends BaseClass {
 		for(WebElement m:d) {
 			m.click();
 			break;
-		} 
+		}
+		
+		hpo.continueBt2().click();
 
 
 	}
