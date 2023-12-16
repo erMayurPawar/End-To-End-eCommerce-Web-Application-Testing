@@ -118,7 +118,7 @@ public class VerifyRegisterAndLogin extends BaseClass {
 		
 		lpo.home().click();
 		
-		driver.close();
+		driver.quit();
 
 	}
 

@@ -13,9 +13,10 @@ package TestCases;
 	import org.openqa.selenium.WebDriver;
 	import org.openqa.selenium.WebElement;
 	import org.openqa.selenium.chrome.ChromeDriver;
-	import org.testng.asserts.SoftAssert;
+    import org.testng.asserts.SoftAssert;
 
 	public class VerifyFooterLinks {
+		
 		
 		public static void main(String[] args) throws MalformedURLException, IOException {
 			
